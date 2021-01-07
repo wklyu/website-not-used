@@ -4,7 +4,7 @@ sort: 1
 
 # Sorts
 ## QuickSort
-``` C++
+``` cpp
 int partition(int a[], int left, int right) {
   int pivot = --right; 
   while (true) {
@@ -21,7 +21,7 @@ int partition(int a[], int left, int right) {
 }
 // partition()
 ```
-``` C++
+``` cpp
 void quicksort(int a[], int left, int right) {
     if (left + 1 >= right)
       return;
@@ -37,7 +37,7 @@ void quicksort(int a[], int left, int right) {
 } // quicksort()
 ```
 ## MergeSort
-``` C++
+``` cpp
 void merge(Item a[], int left, int mid, int right) { 
   int size = right - left;
   vector<int> c(size);
@@ -52,7 +52,7 @@ void merge(Item a[], int left, int mid, int right) {
 copy(c.begin(), c.end(), &a[left]); // merge()
 }
 ```
-``` C++
+``` cpp
 void merge_sort(Item a[], int left, int right) {
   if (right < left + 2) // base case: < 2 items 
     return;
@@ -63,7 +63,7 @@ void merge_sort(Item a[], int left, int right) {
 }// merge_sort()
 ```
 ## HeapSort
-``` C++
+``` cpp
 void heapify(int arr[], int n, int i) 
 { 
     int largest = i; // Initialize largest as root 
@@ -87,7 +87,7 @@ void heapify(int arr[], int n, int i)
     } 
 } 
 ```
-``` C++
+``` cpp
 void heapsort(Item heap[], int n) {
     heapify(heap, n);
     for (int i = n; i >= 2; --i) {
